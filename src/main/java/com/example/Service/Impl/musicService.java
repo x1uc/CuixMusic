@@ -17,4 +17,10 @@ public class musicService implements Music_Service {
     public List<Music> getByName(String str) {
         return musicDao.getByName(str);
     }
+
+    @Override
+    public Boolean insertSong(String name, String sql_song_path, String musician, String sql_img_path) {
+        Integer rt = musicDao.uploadMusic(name, sql_song_path, musician, sql_img_path);
+        return rt > 1;
+    }
 }
