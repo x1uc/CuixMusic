@@ -51,11 +51,13 @@ public class cuixController {
         //歌手
         ID3v23Frame artistFrame = (ID3v23Frame) mp3File.getID3v2Tag().frameMap.get("TPE1");
         String cls_path = System.getProperty("user.dir");
-//        保存图片
-        String img_path = cls_path + "/src/main/resources/static/images/" + file.getOriginalFilename();
+//        保存图片  备注是的是再本地环境 下面的是打包之后的 记得再target中加上 static/song  和static/images 来存储 静态文件
+//        String img_path = cls_path + "/src/main/resources/static/images/" + file.getOriginalFilename();
+        String img_path = cls_path + "/classes/static/images/" + file.getOriginalFilename();
         file.transferTo(new File(img_path));
 //        保存歌曲
-        String song_path = cls_path + "/src/main/resources/static/song/" + file1.getOriginalFilename();
+//        String song_path = cls_path + "/src/main/resources/static/song/" + file1.getOriginalFilename();
+        String song_path = cls_path + "/classes/static/song/" + file1.getOriginalFilename();
         file1.transferTo(new File(song_path));
 
 
