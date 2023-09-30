@@ -6,3 +6,4 @@ this is the project backend
 ## tips
 -  直接download下来的代码时打包直接可用的
 -  如果在开发环境传送歌曲给后台时 需要把保存的路径修改一下（在controller层有对应的代码和注释）
+-  首页周杰伦的那四首歌是写死在前端的
