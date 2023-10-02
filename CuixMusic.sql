@@ -1,12 +1,11 @@
-Create table CuixMusic
+CREATE TABLE CuixMusic
 (
-    id       int primary key,
-    name     varchar(255) not null,
-    path     varchar(255) not null,
-    musician varchar(255) not null,
-    arr_img  varchar(255) not null
+    id       INT PRIMARY KEY AUTO_INCREMENT,
+    name     VARCHAR(255) NOT NULL,
+    path     VARCHAR(255) NOT NULL,c
+    musician VARCHAR(255) NOT NULL,
+    arr_img  VARCHAR(255) NOT NULL
 );
-
 
 insert into CuixMusic
 values (1, "星晴", "./song/星晴.mp3", "周杰伦", "/images/jay.png"),
